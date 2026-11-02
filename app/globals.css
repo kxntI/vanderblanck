@@ -189,5 +189,20 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--dirt) var(--muted);
+  scrollbar-color: #ff48c8 #160d1f;
 }
+
+/* full 90s personal-web skin */
+.retro-page {
+  background-color: #160d1f;
+  background-image: radial-gradient(#4b1a5e 1px, transparent 1px), linear-gradient(135deg, #160d1f 0%, #241036 55%, #09070d 100%);
+  background-size: 9px 9px, 100% 100%;
+  font-family: var(--font-mono);
+}
+.retro-nav { image-rendering: pixelated; }
+.retro-button { border: 2px outset #fff; background: #c0c0c0; }
+.retro-button:active { border-style: inset; }
+.retro-window { border: 4px ridge #ff48c8; background: rgba(9, 7, 13, .94); box-shadow: 9px 9px 0 #000, 0 0 24px rgba(255, 72, 200, .22); }
+.retro-title { margin: -0.25rem -0.25rem 1.25rem; border: 2px outset #fff; background: linear-gradient(90deg, #000080, #800080); padding: .35rem .5rem; color: #fff; font-family: var(--font-mono); font-size: .75rem; font-weight: 700; }
+.font-pixel { font-family: var(--font-terminal); letter-spacing: .04em; text-shadow: 2px 2px 0 #000; }
+.retro-page a { text-decoration-thickness: 2px; text-underline-offset: 2px; }
