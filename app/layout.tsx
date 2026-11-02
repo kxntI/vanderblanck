@@ -30,9 +30,9 @@ const anton = Anton({
 })
 
 export const metadata: Metadata = {
-  title: 'JCBV.EXE // 90s personal web horror archive',
+  title: 'JCBV // CORRUPTED_ARCHIVE [seen this angel]',
   description:
-    'Juan Carlos B Valenzuela personal website: profile, hobbies, interests, and a corrupted gallery of art, gaming, and internet noise.',
+    'An experimental post-internet portfolio of Juan Carlos B Valenzuela. A corrupted archive recovered from an abandoned server.',
   generator: 'v0.app',
   icons: {
     icon: [

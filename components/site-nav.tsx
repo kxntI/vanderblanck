@@ -1,5 +1,4 @@
 import Link from "next/link"
-import type { ReactNode } from "react"
 
 const links = [
   ["HOME", "/"],
@@ -22,6 +21,6 @@ export function SiteNav() {
   )
 }
 
-export function RetroShell({ children }: { children: ReactNode }) {
+export function RetroShell({ children }: { children: React.ReactNode }) {
   return <main className="retro-page min-h-screen bg-[#160d1f] text-[#f3e8ff]"><SiteNav />{children}</main>
 }
