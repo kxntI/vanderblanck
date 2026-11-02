@@ -2,10 +2,12 @@ import Link from "next/link"
 import { ArtifactCard } from "@/components/artifact-card"
 import { DragWindow } from "@/components/drag-window"
 import { ARTIST, EMAIL, TAGLINE, works } from "@/lib/works"
+import { SiteNav } from "@/components/site-nav"
 
 export default function Page() {
   return (
     <main className="crt relative min-h-screen overflow-x-hidden">
+      <SiteNav />
       {/* top error/status bar */}
       <div className="sticky top-0 z-40 flex items-center justify-between gap-2 border-b-2 border-dirt bg-primary px-2 py-1 font-mono text-[11px] text-primary-foreground">
         <span className="blink text-warn">● REC</span>
