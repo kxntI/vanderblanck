@@ -91,24 +91,8 @@ export default function Page() {
           </div>
         </div>
 
-        {/* obvious archive controls */}
-        <nav aria-label="Archive actions" className="relative z-20 mb-6 flex max-w-5xl flex-wrap gap-2 lg:ml-auto lg:mr-0 lg:max-w-3xl">
-          <Link href="#works" className="glitch btn3d inline-flex min-h-9 items-center px-3 py-2 font-mono text-xs font-bold text-foreground hover:bg-primary hover:text-primary-foreground">
-            [ OPEN THE ARCHIVE ]
-          </Link>
-          <Link href="#directory" className="glitch btn3d inline-flex min-h-9 items-center px-3 py-2 font-mono text-xs font-bold text-foreground hover:bg-primary hover:text-primary-foreground">
-            [ VIEW FILE LIST ]
-          </Link>
-          <a href={`mailto:${EMAIL}`} className="glitch btn3d inline-flex min-h-9 items-center px-3 py-2 font-mono text-xs font-bold text-foreground hover:bg-primary hover:text-primary-foreground">
-            [ SEND A SIGNAL ]
-          </a>
-          <Link href={`/works/${works[0].slug}`} className="glitch btn3d inline-flex min-h-9 items-center bg-warn px-3 py-2 font-mono text-xs font-bold text-white hover:bg-primary">
-            [ ENTER RANDOM FILE ]
-          </Link>
-        </nav>
-
         {/* the gallery: artifacts scattered into a tight chaotic grid */}
-        <div id="works" className="relative z-10 mx-auto grid max-w-5xl grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 lg:ml-auto lg:mr-0 lg:max-w-3xl lg:grid-cols-2">
+        <div className="relative z-10 mx-auto grid max-w-5xl grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 lg:ml-auto lg:mr-0 lg:max-w-3xl lg:grid-cols-2">
           {works.map((w, i) => (
             <div key={w.slug} style={{ marginTop: i % 2 === 1 ? "1.5rem" : 0 }}>
               <ArtifactCard work={w} idx={i} />
@@ -118,7 +102,7 @@ export default function Page() {
       </section>
 
       {/* folder tree footer */}
-      <footer id="directory" className="border-t-2 border-dirt bg-card px-3 py-4 font-mono text-[11px] text-foreground">
+      <footer className="border-t-2 border-dirt bg-card px-3 py-4 font-mono text-[11px] text-foreground">
         <p className="text-muted-foreground">{"// DIRECTORY"}</p>
         <ul className="mt-1">
           <li>{"[DIR] C:\\ARCHIVE\\JCBV"}</li>
